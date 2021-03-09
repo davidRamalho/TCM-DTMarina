@@ -7,35 +7,36 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/home.css" type="text/css" />
 
     <title>Downtown Marina</title>
   </head>
   <body>
     <header></header>
-    <svg tabindex="1" style="width: 100%; height: 2000px">
+<!--     
+    <div id="grey"> </div>
+    <div class="container">
+      <div class="diagonal">
+        <h2>Header title</h2>
+        <p>Yes a CSS diagonal corner is possible</p>
+      </div>
+      <div class="diagonal2">
+        <h2>Header title</h2>
+        <p>Yes a CSS diagonal corner with background image is possible</p>
+      </div>
+      <div class="diagonal3">
+        <div class="inside">
+          <h2>Header title</h2>
+          <p>Yes a CSS diagonal border is even possible with an extra div</p>
+        </div>
+      </div>
+    </div> -->
 
-      <g id="hexfield">
-        <polygon points="0,0 650,0 350,2000 0,2000"/>
-        <polygon id="another" points="650,0 1300,0 1300,2000 350,1000"/>
-      </g>
-      
-        <defs>
-          <pattern id="image1" height="100%" width="100%" viewBox="0 0 640 640">
-            <image width="640" height="640" xlink:href="https://github.com/davidRamalho/TCM-DTMarina/blob/master/images/Downtown-Marina-Moorage-Dawn-1600pxW.jpg"/>
-          </pattern>
-          <pattern id="image2" height="100%" width="100%" viewBox="0 0 640 640">
-            <image width="64" height="64" xlink:href="https://cdn4.iconfinder.com/data/icons/imod/512/Software/iPhoto.png"/>
-          </pattern>
-        </defs>
-        
-        <use xlink:href="#hexfield" fill="yellow"/>
-        <use xlink:href="#hexfield" fill="url(#image1)"/>
-      
-        <use xlink:href="#another" fill="red"/>
-        <use xlink:href="#another" fill="url(#image2)"/>
-      
-      </svg>
-    
+    <div class="parent">
+      <div class="one"></div>
+      <div class="two"></div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
