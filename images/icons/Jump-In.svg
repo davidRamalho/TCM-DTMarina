@@ -3,7 +3,7 @@
     <style>
       .cls-1 {
         font-size: 25px;
-        fill: #fff;
+        color: brown;
         font-family: "Rocket Clouds";
       }
     </style>
