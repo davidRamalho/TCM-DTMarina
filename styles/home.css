@@ -343,6 +343,71 @@ html, body
 }
 
 .w-40 {
+  display: flex;
+  position: relative;
+  width: 30%;
   margin-left: 1.5em;
   margin-right: 1.5em;
+}
+.blog-article {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  color: #000;
+}
+.blog {
+  margin-bottom: 3em;
+}
+.interactive-map {
+  position: relative;
+
+}
+.interactive-map > div {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  left: 10%;
+}
+.interactive-map > div > button {
+  height: 3em;
+  width: 50%;
+}
+.rope {
+  position: absolute;
+  bottom: -3%;
+  right: 5%;
+}
+.instagram-container {
+  margin-top: 1em;
+  height: 26em;
+}
+.instagram-row {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 0.75em;
+  width: 100%;
+  height: 50%;
+  margin-bottom: 0.25em;
+} 
+.instagram-col {
+  position: relative;
+  height: 100%;
+}
+.instagram-col > i {
+  position: absolute;
+  bottom: 3%;
+  left: 2%;
+  z-index: 1;
+  color: #fff;
+}
+.instagram-col > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98%;
+  height: 100%;
+  border-radius: 0.75em;
+  z-index: 0;
 }
