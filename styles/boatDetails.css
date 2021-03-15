@@ -1,0 +1,178 @@
+.back {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+}
+.back > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.link-back {
+  border-right: #fff solid 1px;
+}
+.back:hover {
+  cursor: pointer;
+}
+.rentalCard {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+}
+.title {
+  display: flex;
+  align-self: flex-start;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+.rentalImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 700px;
+}
+.rentalImage > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 1em;
+}
+.image-roll {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70px;
+}
+.card-details {
+  display: flex;
+  flex-direction: row;
+}
+.details-col {
+  width: 60%;
+}
+.brand-name {
+  display: flex;
+  align-self: flex-start;
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-style: italic;
+}
+.detailed-info {
+  width: 80%;
+  margin-bottom: 4em;
+}
+.perHour {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4.55em;
+  border-right: solid black 1px;
+  line-height: 1.2;
+}
+.perHrTitle {
+  font-size: 1.75em;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+}
+.pricePerHr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  font-size: 1.75em;
+  font-weight: 600;
+}
+.specs-col {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+  width: 45%;
+}
+.spec {
+  font-size: 1.75em;
+  font-weight: 600;
+  margin-bottom: 1em;
+  align-self: flex-start;
+}
+.spec-table {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.spec-table > div {
+  width: 50%;
+}
+.spec-table > div > div {
+  flex-direction: column;
+  border-bottom: goldenrod solid 1px;
+}
+.spec-table > div > div:nth-child(6) {
+  border-bottom: none;
+}
+.note {
+  font-size: 0.85em;
+  font-style: italic;
+}
+.perDay {
+  margin-top: 5em;
+  line-height: 1.2;
+}
+.perDay-title {
+  font-size: 1.75em;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.times {
+  display: flex;
+  flex-direction: row;
+}
+.times > div {
+  margin-right: 5em;
+}
+.perDayPrices {
+  display: flex;
+  flex-direction: row;
+}
+.perDayPrices > div {
+  margin-right: 2.3em;
+  font-size: 1.75em;
+  font-weight: 600;
+}
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  text-align: center;
+  border: none;
+  width: 12em;
+  height: 3em;
+  padding: 0.5em;
+  color: #fff;
+  bottom: 0%;
+  margin-top: 1em;
+}
+form > input {
+  color: #fff;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+}

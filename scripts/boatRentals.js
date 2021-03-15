@@ -5,7 +5,7 @@ const createRentalElement = (rentalInfo) => {
       <img src=${rentalInfo.imgSource} alt="rental-item">
       <div class="item-card">
         <h2 class="item-title">${rentalInfo.title}</h2>
-        <p class="item-details">Do you crave a life that knows no limit? Take your summer to the next level and...<a href="/repository/templates/boatDetails.html">View Details</a> </p>
+        <p class="item-details">Do you crave a life that knows no limit? Take your summer to the next level and...<a class="details" href="/repository/templates/boatDetails.html">View Details</a></p>
         <div class="rate-tables">
           <div class="item-rates">
             <div class="rate-type">PER HOUR</div>
@@ -69,7 +69,7 @@ const generateRentalItems = (rentalDataArray) => {
 const rentalData = [
   {
     type: 'wakesurf', 
-    title: 'MasterCraftX24',
+    title: 'MasterCraft X24',
     imgSource: '/repository/images/boatRentals/MasterCraftX24.jpg', 
     rates: {
       hourly: ['$299', '$339', '$579', '$1,039', '$1,419'], 
@@ -169,7 +169,6 @@ const faqData = [
   }
 ];
 
-
 $(document).ready(function() {
   generateRentalItems(rentalData);
   generateFAQItems(faqData);
@@ -187,8 +186,14 @@ $(document).ready(function() {
       $( `.faq-expand > svg.bi-plus`).eq(index).removeClass('hidden');
     }
   });
-
-
+  
+  //GRAB RENTAL ITEM's TITLE
+  $('.details').on('click', function() {
+    const index = $('.details').index(this);
+    let title = $('.item-title').closest('h2').eq(index).html();
+    sessionStorage.setItem("title", title);
+    sessionStorage.setItem("items", JSON.stringify(rentalData));
+  });
   //ISOTOPE FILTERING
   $(".items").isotope({
     itemSelector: ".item", 
@@ -200,12 +205,11 @@ $(document).ready(function() {
   $(".menu ul li").click(function() {
     $(".menu ul li").removeClass("active");
     $(this).addClass("active");
-  
-    var selector = $(this).attr("data-filter")
+    const selector = $(this).attr("data-filter")
   
     $(".items").isotope({
       filter: selector
     });
     return false;
   });
-})
+});
