@@ -114,10 +114,82 @@ const rentalData = [
   }
 ]
 
+//CREATES FAQ ITEMS
+const createFAQElement = (faqInfo) => {
+  const element = $('div.faq').append(`
+    <div class="faq-item">
+      <div class="qNa">
+        <h2>Q:&nbsp${faqInfo.question} </h2>
+        <div class="answer hidden"><b>A:&nbsp</b> ${faqInfo.answer}</div>
+      </div>
+      <div class="faq-expand">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+          <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash hidden" viewBox="0 0 16 16">
+          <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+        </svg>
+      </div>
+    </div>
+  `)
+  return element;
+}
+
+const generateFAQItems = (faqDataArray) => {
+  for (const faq of faqDataArray) {
+    createFAQElement(faq);
+  }
+}
+
+//FAKE FAQ DATA
+const faqData = [
+  {
+    question: 'IS THERE A DAMAGE DEPOSIT REQUIRED IN ORDER TO RENT A BOAT?',
+    answer: 'Yes. For SeaDoos, Chaparrals, and Cobalts, there is a $500 damage deposit. For Tournament boats, there is a $1000 damage deposit.'
+  }, 
+  {
+    question: 'IS THERE A DAMAGE DEPOSIT REQUIRED IN ORDER TO RENT A BOAT?',
+    answer: 'Yes. For SeaDoos, Chaparrals, and Cobalts, there is a $500 damage deposit. For Tournament boats, there is a $1000 damage deposit.'
+  }, 
+  {
+    question: 'IS THERE A DAMAGE DEPOSIT REQUIRED IN ORDER TO RENT A BOAT?',
+    answer: 'Yes. For SeaDoos, Chaparrals, and Cobalts, there is a $500 damage deposit. For Tournament boats, there is a $1000 damage deposit.'
+  }, 
+  {
+    question: 'IS THERE A DAMAGE DEPOSIT REQUIRED IN ORDER TO RENT A BOAT?',
+    answer: 'Yes. For SeaDoos, Chaparrals, and Cobalts, there is a $500 damage deposit. For Tournament boats, there is a $1000 damage deposit.'
+  }, 
+  {
+    question: 'IS THERE A DAMAGE DEPOSIT REQUIRED IN ORDER TO RENT A BOAT?',
+    answer: 'Yes. For SeaDoos, Chaparrals, and Cobalts, there is a $500 damage deposit. For Tournament boats, there is a $1000 damage deposit.'
+  }, 
+  {
+    question: 'IS THERE A DAMAGE DEPOSIT REQUIRED IN ORDER TO RENT A BOAT?',
+    answer: 'Yes. For SeaDoos, Chaparrals, and Cobalts, there is a $500 damage deposit. For Tournament boats, there is a $1000 damage deposit.'
+  }
+];
+
 //ISOTOPE FILTERING
 $(document).ready(function() {
   generateRentalItems(rentalData);
+  generateFAQItems(faqData);
   
+  $('.faq-item').on('click', function() {
+    const index = $('.faq-item').index(this)
+    
+    if ($(`.faq-item > div > div`).eq(index).hasClass('hidden')) {
+      $(`.faq-item > div > div`).eq(index).removeClass('hidden');
+      $( `.faq-expand > svg.bi-dash`).eq(index).removeClass('hidden');
+      $( `.faq-expand > svg.bi-plus`).eq(index).addClass('hidden');
+    } else {
+      $(`.faq-item > div > div`).eq(index).addClass('hidden')
+      $( `.faq-expand > svg.bi-dash`).eq(index).addClass('hidden');
+      $( `.faq-expand > svg.bi-plus`).eq(index).removeClass('hidden');
+    }
+  });
+
+
+
   $(".items").isotope({
     itemSelector: ".item", 
     layoutMode: "fitRows",
