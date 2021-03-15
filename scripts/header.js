@@ -3,7 +3,7 @@ const createHeader = () => {
   const element = $('.header').append(`
     <div class="logo">
       <a href='/repository/templates/home.html'>
-        <img src="/Elements/00 Global/Downtown-Marina-Logo.svg" alt="logo">
+        <img src="/repository/images/home/Downtown-Marina-Logo.svg" alt="logo">
       </a>
     </div>
     <nav class="nav">
@@ -33,7 +33,7 @@ const createHeader = () => {
     </nav>
     <div class="book">
       <div class="hang10">
-        <img src="/Elements/00 Global/Doodle-Hang-Loose.svg" alt="hangLoose">
+        <img src="/repository/images/home/Doodle-Hang-Loose.svg" alt="hangLoose">
       </div>
       <a href="/" class="book-link">BOOK ONLINE</a>
     </div>

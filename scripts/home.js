@@ -2,7 +2,7 @@
 const createBlogElements = (date, title) => {
   const element = $('.blog-grid').append(`
     <div class="blog-item">
-      <img class="img-fluid" src="/Elements/01 Home/blogimg.png" alt="blog-img">
+      <img class="img-fluid" src="/repository/images/home/blogimg.png" alt="blog-img">
       <article class='blog-article'>
         <p class="blog-date">${date}</p>
         <div class="blog-title">${title}</div>

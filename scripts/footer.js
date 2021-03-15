@@ -3,7 +3,7 @@ const createFooter = () => {
   const element = $('.footer').append(`
     <div class="footer-content">
       <div class="contact-info">
-        <img src="/Elements/00 Global/Downtown-Marina-Logo.svg" alt="logo">
+        <img src="/repository/images/home/Downtown-Marina-Logo.svg" alt="logo">
         <div class="contact-row">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3 footer-icon" viewBox="0 0 16 16">
             <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
@@ -51,8 +51,8 @@ const createFooter = () => {
         <a href="/" class="tips">ABOUT US</a>
       </div>
     </div>
-    <img class="sun" src="/Elements/00 Global/Doodle-Sun.svg" alt="sun-doodle">
-    <img class="surfboard" src="/Elements/00 Global/Doodle-Surfboard.svg" alt="surf-doodle">`);
+    <img class="sun" src="/repository/images/home/Doodle-Sun.svg" alt="sun-doodle">
+    <img class="surfboard" src="/repository/images/home/Doodle-Surfboard.svg" alt="surf-doodle">`);
   return element;
 }
 
