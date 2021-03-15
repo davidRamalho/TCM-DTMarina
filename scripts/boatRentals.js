@@ -169,14 +169,14 @@ const faqData = [
   }
 ];
 
-//ISOTOPE FILTERING
+
 $(document).ready(function() {
   generateRentalItems(rentalData);
   generateFAQItems(faqData);
   
+  //SHOWS AND HIDES FAQ ANSWERS
   $('.faq-item').on('click', function() {
     const index = $('.faq-item').index(this)
-    
     if ($(`.faq-item > div > div`).eq(index).hasClass('hidden')) {
       $(`.faq-item > div > div`).eq(index).removeClass('hidden');
       $( `.faq-expand > svg.bi-dash`).eq(index).removeClass('hidden');
@@ -189,7 +189,7 @@ $(document).ready(function() {
   });
 
 
-
+  //ISOTOPE FILTERING
   $(".items").isotope({
     itemSelector: ".item", 
     layoutMode: "fitRows",
