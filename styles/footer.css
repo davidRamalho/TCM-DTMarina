@@ -1,0 +1,75 @@
+.footer {
+  position: relative;
+  margin-top: 5em;
+  height: 30em;
+  background-image: url("/Elements/00 Global/Footer-Wave-BG.png");
+  overflow: hidden;
+}
+.sun {
+  position: absolute;
+  right: 20%;
+  top: 12%;
+  height: 12em;
+  width: 12em;
+}
+.surfboard {
+  position: absolute;
+  bottom: -12%;
+  right: 11%;
+  height: 22em;
+
+}
+.footer-content {
+  display: flex;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 60%;
+  flex-direction: row;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+  margin: 1em;
+}
+.contact-row {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contact-row > div {
+  flex-shrink: 2;
+}
+.footer-icon {
+  align-self: flex-start;
+  margin-right: 0.5em;
+  margin-top: 0.2em;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  width: 22em;
+  margin: 1em;
+  margin-top: 3.7em;
+  }
+.footer-links2 {
+  display: flex;
+  flex-direction: column;
+  width: 40em;
+  margin: 1em;
+  margin-top: 3.7em;
+  }
+.footer-links > a {
+  color: #000;
+  margin-top: 0.8em;
+}
+.footer-links2 > a {
+  color: #000;
+  margin-top: 0.8em;
+}
+.tips {
+  color: #000;
+  margin-left: 1em;
+}

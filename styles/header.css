@@ -1,0 +1,131 @@
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+  cursor: pointer;
+}
+@font-face {
+  font-family: 'rocket_clouds_demoregular';
+  src: url('/repository/fonts/RocketClouds/rocket_clouds-webfont.woff') format('woff2'),
+       url('/repository/fonts/rocket_clouds-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+}
+
+.logo, .nav, .book {
+  position: absolute;
+  height: 8.5em;
+  top: 0;
+}
+
+.logo {
+  width: 22%;
+  background-color:white;
+  z-index: 2;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%); 
+}
+.logo > a > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 75%;
+  transform: translate(-60%, -50%);
+}
+.nav {
+  width: 76%;
+  margin-left: 14%;
+  margin-right: 10%;
+  background-color: darkblue;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%); 
+  z-index: 1;
+}
+.nav-item {
+  display: flex;
+  flex-shrink: 1;
+  height: 50%;
+}
+.nav-link {
+  font-size: 1em;
+  color: white;
+  align-self: center
+}
+.book {
+  position: absolute;
+  width: 15%;
+  right: 0;
+  background-color:#fff;
+  z-index: 2;
+  color: black;
+  -webkit-clip-path: polygon(15% 0%, 100% 0%, 100% 50%, 0% 50%);
+  clip-path: polygon(15% 0%, 100% 0%, 100% 50%, 0% 50%); 
+}
+.hang10 {
+  overflow: hidden;
+}
+.hang10 > img {
+  position: absolute;
+  top: 55%;
+  margin-left: 15%;
+  height: 4em;
+  animation: side-to-side 2.5s ease-in forwards infinite alternate;
+  transform-origin: 50% 130%;
+}
+
+@keyframes side-to-side {
+  0% { transform: translateY(0px) rotate( 0.0deg) }
+  40% { transform: translateY(-102%) rotate( 0.0deg) }
+  55% { transform: translateY(-102%) rotate(7.0deg) }  
+  70% { transform: translateY(-102%) rotate(-4.0deg) }
+  80% { transform: translateY(-102%) rotate(7.0deg) }
+  90% { transform: translateY(-102%) rotate(-4.0deg) }
+  100% { transform: translateY(-102%) rotate(7.0deg) }
+} 
+
+.book-link {
+  position: absolute;
+  top: 6%;
+  left: 35%;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  width: 50%;
+  white-space: nowrap;
+  margin-left: 3%;
+  padding: 1em;
+  font-size: 1em;
+}
+.weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  right: 1%;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 4.5em;
+  z-index: 1;
+}
+.weather > div > img {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 0.2em;
+}
+.temp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+.temp > svg {
+  margin-bottom: 0.2em;
+}
