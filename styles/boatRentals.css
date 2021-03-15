@@ -54,7 +54,7 @@
   top: 0;
   left: 0;
   background-size: cover;
-  background-image: url('/Elements/02 Boat Rentals/DM-Boat-Rentals-AllAboard-2204850-1600pxW.jpg');
+  background-image: url('/repository/images/boatRentals/DM-Boat-Rentals-AllAboard-2204850-1600pxW.jpg');
   -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%); 
 }
