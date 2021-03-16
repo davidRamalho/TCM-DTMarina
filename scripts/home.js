@@ -39,7 +39,6 @@ const createInstagramElements = (imageNumber) => {
   if (imageNumber > 6) {
     rowNumber = '2';
   };
-  console.log(rowNumber)
   const element = $(`.instagram-row-${rowNumber}`).append(`
     <div class="instagram-col" style="background-image: url(/repository/images/instagram/${imageNumber}.jpg)">
       <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
