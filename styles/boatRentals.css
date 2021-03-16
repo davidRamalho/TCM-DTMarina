@@ -115,11 +115,9 @@
   background-color: transparent;
   border: none;
 }
-
 .isotope-container {
   width: 100%;
   height: fit-content;
-  margin: 10px auto;
   margin-bottom: 3em;
 }
 .menu {
