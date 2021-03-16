@@ -16,17 +16,43 @@ const createBackToOverview = (name) => {
 const createRentalCard = (rentalData) => {
   const element = $('.rentalCard').append(`
     <div class="title">${rentalData.title}</div>
-    <div class="rentalImage">
-      <img src="${rentalData.imgSource}" alt="rental-item">
-    </div>
-    <div class='image-roll'>
-      <img src="${rentalData.imgSource}" alt="rental-item">
-      <img src="${rentalData.imgSource}" alt="rental-item">
-      <img src="${rentalData.imgSource}" alt="rental-item">
-      <img src="${rentalData.imgSource}" alt="rental-item">
-      <img src="${rentalData.imgSource}" alt="rental-item">
-      <img src="${rentalData.imgSource}" alt="rental-item">
-      <img src="${rentalData.imgSource}" alt="rental-item">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.sub-img').on({
+                mouseover: function () {
+                    $(this).css({
+                        'cursor': 'pointer',
+                        'box-shadow': '#0080c8 4px 4px'
+                    });
+                },
+                mouseout: function () {
+                    $(this).css({
+                        'cursor': 'default',
+                        'box-shadow': 'none'
+                    });
+                },
+                click: function () {
+                    const imageURL = $(this).attr('src');
+                    $('#mainImage').fadeOut(300, function () {
+                        $(this).attr('src', imageURL);
+                    }).fadeIn(300);
+                }
+            });
+        });
+    </script>
+    <div class="img-gallery">
+      <div class="rentalImage">
+        <img id="mainImage" src="${rentalData.imgSource[0]}" alt="rental-item">
+      </div>
+      <div class='image-roll'>
+        <img class="sub-img" src="${rentalData.imgSource[0]}" alt="rental-item">
+        <img class="sub-img" src="${rentalData.imgSource[1]}" alt="rental-item">
+        <img class="sub-img" src="${rentalData.imgSource[2]}" alt="rental-item">
+        <img class="sub-img" src="${rentalData.imgSource[3]}" alt="rental-item">
+        <img class="sub-img" src="${rentalData.imgSource[4]}" alt="rental-item">
+        <img class="sub-img" src="${rentalData.imgSource[5]}" alt="rental-item">
+        <img class="sub-img" src="${rentalData.imgSource[6]}" alt="rental-item">
+      </div>
     </div>
     <div class="card-details">
       <div class="details-row">

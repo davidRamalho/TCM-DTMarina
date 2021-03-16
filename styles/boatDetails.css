@@ -31,6 +31,11 @@
   font-size: 2.5em;
   font-weight: 600;
 }
+.img-gallery {
+  border: solid #7e8a96 2px;
+  background-color: #b7c1ca;
+  border-radius: 1em;
+}
 .rentalImage {
   display: block;
   margin-left: auto;
@@ -42,14 +47,25 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  margin-bottom: 1em;
-  border-radius: 1em;
+  border: solid #7e8a96 1px;
+  border-bottom: solid #7e8a96 4px;
+  margin-bottom: 0.5em;
+  border-top-left-radius: 0.75em;
+  border-top-right-radius: 0.75em;
 }
 .image-roll {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 70px;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 0.25em;
+}
+.sub-img {
+  border: solid black 2px;
+  border-radius: 0.25em;
+  width: 10%;
 }
 .card-details {
   display: flex;

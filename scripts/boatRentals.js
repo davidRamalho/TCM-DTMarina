@@ -2,7 +2,7 @@
 const createRentalElement = (rentalInfo) => {
   const element = $('.items').append(`
     <div class="item ${rentalInfo.type}">
-      <img src=${rentalInfo.imgSource} alt="rental-item">
+      <img src=${rentalInfo.imgSource[0]} alt="rental-item">
       <div class="item-card">
         <h2 class="item-title">${rentalInfo.title}</h2>
         <p class="item-details">Do you crave a life that knows no limit? Take your summer to the next level and...<a class="details" href="/repository/templates/boatDetails.html">View Details</a></p>
@@ -74,7 +74,14 @@ const rentalData = [
   {
     type: 'wakesurf', 
     title: 'MasterCraft X24',
-    imgSource: '/repository/images/boatRentals/MasterCraftX24.jpg', 
+    imgSource: [
+      '/repository/images/boatRentals/MasterCraftX24.jpg',
+      '/repository/images/boatRentals/ChaparralH2019Sport.jpg',
+      '/repository/images/boatRentals/MasterCraftX24.jpg',
+      '/repository/images/boatRentals/MasterCraftX24.jpg',
+      '/repository/images/boatRentals/MasterCraftX24.jpg',
+      '/repository/images/boatRentals/MasterCraftX24.jpg',
+      '/repository/images/boatRentals/MasterCraftX24.jpg'], 
     rates: {
       hourly: ['$299', '$339', '$579', '$1,039', '$1,419'], 
       daily: ['$1,299', '$1,069']
@@ -83,7 +90,7 @@ const rentalData = [
   {
     type: 'bowrider', 
     title: 'Chaparral H20 19 Sport',
-    imgSource: '/repository/images/boatRentals/ChaparralH2019Sport.jpg', 
+    imgSource: ['/repository/images/boatRentals/ChaparralH2019Sport.jpg', '/repository/images/boatRentals/ChaparralH2019Sport.jpg', '/repository/images/boatRentals/ChaparralH2019Sport.jpg', '/repository/images/boatRentals/ChaparralH2019Sport.jpg', '/repository/images/boatRentals/ChaparralH2019Sport.jpg', '/repository/images/boatRentals/ChaparralH2019Sport.jpg', '/repository/images/boatRentals/ChaparralH2019Sport.jpg'], 
     rates: {
       hourly: ['$299', '$339', '$579', '$1,039', '$1,419'], 
       daily: ['$1,299', '$1,069']
@@ -92,7 +99,7 @@ const rentalData = [
   {
     type: 'pontoon', 
     title: 'South Bay 525E Pontoon',
-    imgSource: '/repository/images/boatRentals/SouthBayPontoon.jpeg', 
+    imgSource: ['/repository/images/boatRentals/SouthBayPontoon.jpeg', '/repository/images/boatRentals/SouthBayPontoon.jpeg', '/repository/images/boatRentals/SouthBayPontoon.jpeg', '/repository/images/boatRentals/SouthBayPontoon.jpeg', '/repository/images/boatRentals/SouthBayPontoon.jpeg', '/repository/images/boatRentals/SouthBayPontoon.jpeg', '/repository/images/boatRentals/SouthBayPontoon.jpeg'], 
     rates: {
       hourly: ['$299', '$339', '$579', '$1,039', '$1,419'], 
       daily: ['$1,299', '$1,069']
@@ -101,7 +108,7 @@ const rentalData = [
   {
     type: 'jet-ski', 
     title: 'Yamaha VX Deluxe',
-    imgSource: '/repository/images/boatRentals/YamahaVXDeluxe.jpg', 
+    imgSource: ['/repository/images/boatRentals/YamahaVXDeluxe.jpg', '/repository/images/boatRentals/YamahaVXDeluxe.jpg', '/repository/images/boatRentals/YamahaVXDeluxe.jpg', '/repository/images/boatRentals/YamahaVXDeluxe.jpg', '/repository/images/boatRentals/YamahaVXDeluxe.jpg', '/repository/images/boatRentals/YamahaVXDeluxe.jpg', '/repository/images/boatRentals/YamahaVXDeluxe.jpg'], 
     rates: {
       hourly: ['$299', '$339', '$579', '$1,039', '$1,419'], 
       daily: ['$1,299', '$1,069']
@@ -110,7 +117,7 @@ const rentalData = [
   {
     type: 'jet-ski', 
     title: 'Sea-Doo GTI 90',
-    imgSource: '/repository/images/boatRentals/Sea-DooGTI90.jpeg', 
+    imgSource: ['/repository/images/boatRentals/Sea-DooGTI90.jpeg', '/repository/images/boatRentals/Sea-DooGTI90.jpeg', '/repository/images/boatRentals/Sea-DooGTI90.jpeg', '/repository/images/boatRentals/Sea-DooGTI90.jpeg', '/repository/images/boatRentals/Sea-DooGTI90.jpeg', '/repository/images/boatRentals/Sea-DooGTI90.jpeg', '/repository/images/boatRentals/Sea-DooGTI90.jpeg'], 
     rates: {
       hourly: ['$299', '$339', '$579', '$1,039', '$1,419'], 
       daily: ['$1,299', '$1,069']
