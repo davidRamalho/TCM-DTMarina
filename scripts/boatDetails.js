@@ -30,7 +30,7 @@ const createRentalCard = (rentalData) => {
     </div>
     <div class="card-details">
       <div class="details-col">
-        <div class="brand-name">${rentalData.title.slice(0, -3)}</div>
+        <div class="brand-name">${rentalData.title}</div>
         <div class="detailed-info">
           Do you crave a life that knows no limit? Take your summer to the next level and live it up in our XT23, an all new crossover MasterCraft that welcomes wakeboards, surfboards, skis and whatever else you please! The XT23 is where classic traditional bow meets new progressives style lines. An Ilmor engine delivers the highest level of performance and is ideal for competitive to recreational water sports. Get ready to make some waves while also enjoying Gen 2 Surf System and a substantial 2600 pounds of ballast. Enjoy an industry-leading quality boat with your loved ones with the XT23.
         </div>

@@ -64,7 +64,7 @@
   height: 100%;
   top: 0;
   right: 0;
-  background-color: rgb(189, 177, 9);
+  background-color: #feb300;
   -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%); 
 }
@@ -142,10 +142,10 @@
   border-right: none;
 }
 .menu ul li:hover {
-  color: blue;
+  color: #0080c8
 }
 li.active {
-  color: blue;
+  color: #0080c8
 }
 .items {
   width: 80%;
@@ -216,7 +216,7 @@ li.active {
   justify-content: center;
   position: absolute;
   align-items: center;
-  background-color: blue;
+  background-color: #0080c8;
   text-align: center;
   border: none;
   width: 70%;
@@ -232,7 +232,7 @@ li.active {
 }
 .item-rates > form > input {
   border: none;
-  background-color: blue;
+  background-color: #0080c8;
   color: #fff;
   font-size: 0.75em;
   font-weight: 600;
@@ -247,7 +247,7 @@ li.active {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: darkcyan;
+  background-color: #0080c8;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%); 
 }

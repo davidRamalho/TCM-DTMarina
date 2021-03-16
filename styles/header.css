@@ -42,7 +42,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
   width: 76%;
   margin-left: 14%;
   margin-right: 10%;
-  background-color: darkblue;
+  background-color: #003360;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%); 
   z-index: 1;
@@ -63,7 +63,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
   right: 0;
   background-color:#fff;
   z-index: 2;
-  color: black;
+  color: #1e1e1e;
   -webkit-clip-path: polygon(15% 0%, 100% 0%, 100% 50%, 0% 50%);
   clip-path: polygon(15% 0%, 100% 0%, 100% 50%, 0% 50%); 
 }

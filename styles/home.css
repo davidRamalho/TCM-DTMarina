@@ -124,7 +124,7 @@
   height: 100%;
   top: 0;
   right: 0;
-  background-color: rgb(189, 177, 9);
+  background-color: #feb300;
   -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%); 
 }
@@ -282,7 +282,7 @@
   height: 100%;
   top: 0;
   right: 0;
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color:rgba(0, 0, 0, 0.3);
   -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
   z-index: 1;
@@ -490,14 +490,14 @@
   text-align: start;
   font-size: 1.5em;
   font-weight: 600;
-  background-color: gray;
+  background-color: #929fab;
   border: none;
   color: #fff;
   padding-left: 0.5em;
 }
 .advisor-div {
   border-radius: 0.75em;
-  background-color: #0080c8;
+  background-color: #003360;
   margin-top: 1em;
 }
 .advisor {
