@@ -81,7 +81,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
   position: absolute;
   top: 52%;
   margin-left: 15%;
-  height: 44%;
+  height: 6.3vw;
   animation: side-to-side 2.5s ease-in forwards infinite alternate;
   transform-origin: 50% 130%;
 }

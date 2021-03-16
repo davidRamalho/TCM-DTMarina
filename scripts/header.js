@@ -40,4 +40,7 @@ const requestWeatherInfo = () => {
 
 $(document).ready(function() {
   requestWeatherInfo();
+  $( window ).on('orientationchange', function() {
+    window.location.reload();
+  });
 });
