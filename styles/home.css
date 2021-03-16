@@ -22,23 +22,30 @@
   transform: translate(-50%, -50%);
 } 
 
-.jumpIn {
+.jump {
+  width: 15%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
-  bottom: 3em;
+  bottom: 0;
   left: 50%;
+  text-align: center;
+  transform: translate(-50%, 0%);
+}
+.jumpIn {
+  width: 100%;
+  height: 3em;
   font-family: 'rocket_clouds_demoregular';
   font-size: 22px;
   color: #fff;
   font-weight: 600;
-  transform: translate(-50%, -50%);
 }
 
 .bubble {
   height: 40px;
   width: 40px;
-  position: absolute;
-  bottom: 0.3em;
-  left: 50%;
   color: #fff;
   animation: bounce 1s infinite;
 }
@@ -54,7 +61,6 @@
   height: 40px;
   width: 40px;
   color: #fff;
-  transform: translate(-50%, -50%);
 }
 .live {
   margin-top: 4em;
@@ -506,4 +512,12 @@
   margin-left: 1.5em;
   margin-right: 1.5em;
   height: 15em;  
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1600px) {
+
+}
+
+@media only screen and (min-width: 1366px) {
+
 }
