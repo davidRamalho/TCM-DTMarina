@@ -37,24 +37,34 @@ const createRentalCard = (rentalData) => {
           <div class="perHour">
             <div class="perHrTitle">PER HOUR</div>
             <div class="time">
-              <div>8-10AM</div>
-              <div>1 HOUR</div>
-              <div>2 HOURS</div>
-              <div>4 HOURS</div>
-              <div>8 HOURS</div>
-            </div>
-            <div class="pricePerHr">
-              <div>${rentalData.rates.hourly[0]}</div>
-              <div>${rentalData.rates.hourly[1]}</div>
-              <div>${rentalData.rates.hourly[2]}</div>
-              <div>${rentalData.rates.hourly[3]}</div>
-              <div>${rentalData.rates.hourly[4]}</div>
+              <div>
+                <div>8-10AM</div>
+                <div class="perHrPrice">${rentalData.rates.hourly[0]}</div>
+              </div>
+              <div>
+                <div>1 HOUR</div>
+                <div class="perHrPrice">${rentalData.rates.hourly[1]}</div>
+              </div>
+              <div>
+                <div>2 HOURS</div>
+                <div class="perHrPrice">${rentalData.rates.hourly[2]}</div>
+              </div>
+              <div>
+                <div>4 HOURS</div>
+                <div class="perHrPrice">${rentalData.rates.hourly[3]}</div>
+              </div>
+              <div>
+                <div>8 HOURS</div>
+                <div class="perHrPrice">${rentalData.rates.hourly[4]}</div>
+              </div>
             </div>
             <form action="/">
-              <input type="submit" value="BOOK HOURLY"/>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-              </svg>
+              <label>
+                <input type="submit" value="&nbsp;&nbsp;&nbsp;&nbsp;BOOK HOURLY"></input>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                </svg>
+              </label>
             </form>
           </div>
       </div>
@@ -90,11 +100,13 @@ const createRentalCard = (rentalData) => {
             <div>${rentalData.rates.daily[1]}</div>
           </div>
           <form action="/">
-            <input type="submit" value="BOOK DAILY"/>
+          <label>
+            <input type="submit" value="&nbsp;&nbsp;&nbsp;&nbsp;BOOK DAILY"></input>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
               <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
             </svg>
-          </form>
+          </label>
+        </form>
         </div>
       </div>
     </div>

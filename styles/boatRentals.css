@@ -221,7 +221,6 @@ li.active {
   border: none;
   width: 70%;
   height: 2.5em;
-  padding: 0.5em;
   bottom: 0%;
 }
 .rate-rows {
@@ -230,15 +229,39 @@ li.active {
   flex-direction: row;
   justify-content: space-between;
 }
-.item-rates > form > input {
+.item-rates > form > label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #0080c8;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+.item-rates > form.daily {
+  width: 66%;
+}
+
+.item-rates > form > label > input {
+  position: absolute;
+  top: 1%;
   border: none;
   background-color: #0080c8;
   color: #fff;
+  height: 100%;
+  width: 100%;
   font-size: 0.75em;
   font-weight: 600;
+  text-align: left;
 }
-.item-rates > form > svg {
+
+.item-rates > form > label > svg {
+  position: absolute;
+  right: 18%;
   color: white;
+  z-index: 0;
+  cursor: pointer;
 }
 
 .slide3 {
