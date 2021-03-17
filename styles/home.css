@@ -1,12 +1,12 @@
 .introPage {
   position: relative;
   width: 100%;
-  height: 55%;
+  height: 100%;
   background-image: url('/repository/images/home/Downtown-Marina-Banner-Slide1.jpg');
   background-size: cover;
   background-position-x: center;
   resize: none;
-  background-position-y: -2em;
+  background-position-y: 0em;
   background-repeat: no-repeat;
   z-index: -2;
 }
@@ -26,12 +26,12 @@
 
 .jump {
   width: 40%;
-  height: 15%;
+  height: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
-  bottom: 10%;
+  bottom: 10px;
   left: 50%;
   text-align: center;
   transform: translate(-50%, 0%);
@@ -531,8 +531,8 @@ div.ratings-col.review {
 @media (min-width: 576px) { 
   .introPage {
     width: 100%;
-    height: 55%;
-    background-position-y: -2em;
+    height: 100%;
+    background-position-y: 0em;
     background-position-x: center;
     z-index: -2;
   }
@@ -556,7 +556,7 @@ div.ratings-col.review {
     flex-direction: column;
     align-items: center;
     position: absolute;
-    bottom: 10%;
+    bottom: 15px;
     left: 50%;
     text-align: center;
     transform: translate(-50%, 0%);
@@ -1037,7 +1037,7 @@ div.ratings-col.review {
   .introPage {
     width: 100%;
     height: 100%;
-    background-position-y: -2em;
+    background-position-y: 0em;
     background-position-x: center;
     z-index: -2;
   }
@@ -1061,7 +1061,7 @@ div.ratings-col.review {
     flex-direction: column;
     align-items: center;
     position: absolute;
-    bottom: 2%;
+    bottom: 20px;
     left: 50%;
     text-align: center;
     transform: translate(-50%, 0%);
@@ -1530,8 +1530,8 @@ div.ratings-col.review {
 @media (min-width: 992px) { 
   .introPage {
     width: 100%;
-    height: 108%;
-    background-position-y: -2em;
+    height: 100%;
+    background-position-y: 0em;
     z-index: -2;
   }
   
@@ -2023,8 +2023,8 @@ div.ratings-col.review {
 @media (min-width: 1200px) { 
   .introPage {
     width: 100%;
-    height: 108%;
-    background-position-y: -2em;
+    height: 100%;
+    background-position-y: 0em;
     z-index: -2;
   }
   
