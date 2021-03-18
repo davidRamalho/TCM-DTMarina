@@ -141,7 +141,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
   margin-bottom: 0.1em;
 }
 
-@media (min-width: 576px) and (max-width: 767px){  
+@media only screen and (min-width: 576px) and (max-width: 767px){  
   .logo, .nav, .book {
     height: 4em;
   }
@@ -193,7 +193,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
   }
 }
  
-@media (min-width: 768px) and (max-width: 991px) {  
+@media only screen and (min-width: 768px) and (max-width: 991px) {  
   .logo, .nav, .book {
     height: 6em;
   }
@@ -245,7 +245,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
   }
 }
  
-@media (min-width: 992px) { 
+@media only screen and (min-width: 992px) { 
   .logo, .nav, .book {
     height: 6em;
   }
@@ -299,7 +299,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
   }
 }
  
-@media (min-width: 1200px) {  
+@media only screen and (min-width: 1200px) {  
   .logo {
     width: 20%;
   }
@@ -333,7 +333,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
     font-size: 1em;
   }
 }
-@media (min-width: 1570px) {
+@media only screen and (min-width: 1570px) {
   .logo, .nav, .book {
     height: 8.5em;
   }

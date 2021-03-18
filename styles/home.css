@@ -528,7 +528,7 @@ div.ratings-col.review {
   margin-right: 1.5em;
 }
 
-@media (min-width: 576px) { 
+@media only screen and (min-width: 576px) { 
   .introPage {
     width: 100%;
     height: 100%;
@@ -1033,7 +1033,7 @@ div.ratings-col.review {
   }
 }
 
-@media (min-width: 768px) { 
+@media only screen and (min-width: 768px) { 
   .introPage {
     width: 100%;
     height: 100%;
@@ -1527,7 +1527,7 @@ div.ratings-col.review {
 }
 
 
-@media (min-width: 992px) { 
+@media only screen and (min-width: 992px) { 
   .introPage {
     width: 100%;
     height: 100%;
@@ -2020,7 +2020,7 @@ div.ratings-col.review {
 }
 
 
-@media (min-width: 1200px) { 
+@media only screen and (min-width: 1200px) { 
   .introPage {
     width: 100%;
     height: 100%;
