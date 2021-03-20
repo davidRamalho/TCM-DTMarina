@@ -1,61 +1,62 @@
-// CREATE BLOG GRID and ITEMS
-const createBlogElements = (date, title) => {
-  const element = $('.blog-grid').append(`
-    <div class="blog-item">
-      <img class="img-fluid" src="/repository/images/home/blogimg.png" alt="blog-img">
-      <article class='blog-article'>
-        <p class="blog-date">${date}</p>
-        <div class="blog-title">${title}</div>
-      </article>
-    </div>`);
-  return element;
-}
+// Instagram Carousel JS (for small displays only)
+const instagramCarousel = () => {$('#carousel-instagram').on('slide.bs.carousel', function (e) {
+  var $e = $(e.relatedTarget);
+  var idx = $e.index();
+  var totalItems = $('#carousel-instagram .carousel-item').length;
+  var itemsPerSlide = totalItems - 3;
 
-const createBlogGrid = (blogs) => {
-  for (const blogElement of blogs) {
-    createBlogElements(blogElement.date, blogElement.title);
+  if (idx >= totalItems-(itemsPerSlide-1)) {
+      var it = itemsPerSlide - (totalItems - idx);
+      for (var i=0; i<it; i++) {
+          // append slides to end
+          if (e.direction=="left") {
+              $('#carousel-instagram .carousel-item').eq(i).appendTo('.carousel-inner');
+          }
+          else {
+              $('#carousel-instagram .carousel-item').eq(0).appendTo('.carousel-inner');
+          }
+      }
   }
-}
-
-// FAKE BLOG DATA
-const blogData = [
-  {
-    date: (new Date(Date.now()).toDateString()).slice(3,10).toUpperCase() + ',' + (new Date(Date.now()).toDateString()).slice(10,15).toUpperCase(), 
-    title: `<a href='/'>BLOG POST <br> TITLE HERE</a>`
-  },
-  {
-    date: (new Date(Date.now()).toDateString()).slice(3,10).toUpperCase() + ',' + (new Date(Date.now()).toDateString()).slice(10,15).toUpperCase(), 
-    title: `<a href='/'>BLOG POST <br> TITLE HERE</a>`
-  },
-  {
-    date: (new Date(Date.now()).toDateString()).slice(3,10).toUpperCase() + ',' + (new Date(Date.now()).toDateString()).slice(10,15).toUpperCase(), 
-    title: `<a href='/'>BLOG POST <br> TITLE HERE</a>`
-  },
-];
-
-// CREATES INSTAGRAM PICTURE ELEMENTS
-const createInstagramElements = (imageNumber) => {
-  let rowNumber = '1';
-  if (imageNumber > 6) {
-    rowNumber = '2';
-  };
-  const element = $(`.instagram-row-${rowNumber}`).append(`
-    <div class="instagram-col" style="background-image: url(/repository/images/instagram/${imageNumber}.jpg)">
-      <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
-    </div>
-  `);
-  return element;
-}
-
-const createInstagramGrid = () => {
-  let i = 1;
-  while (i < 13) {
-    createInstagramElements(i);
-    i++
-  }
-}
+})};
 
 $(document).ready(function() {
-  createBlogGrid(blogData);
-  createInstagramGrid();
+  //Checks if to show carousel or grid on page load
+  if ($(window).width() > 576 ){
+    $('#live-carousel').hide();
+    $('#live-grid').show();
+  } else {
+    $('#live-carousel').show();
+    $('#live-grid').hide();
+  }
+
+  //Checks if to show carousel or grid on page resize
+  $(window).resize(function() {
+    if ($(window).width() > 576 ){
+      $('#live-carousel').hide();
+      $('#live-grid').show();
+    } else {
+      $('#live-carousel').show();
+      $('#live-grid').hide();
+    }
+  });
+
+  if ($(window).width() > 768 ){
+    $('#instagram-grid').show();
+    $('#carousel-instagram').hide();
+  } else {
+    $('#carousel-instagram').show();
+    $('#instagram-grid').hide();
+    instagramCarousel();
+  }
+
+  $(window).resize(function() {
+    if ($(window).width() > 768 ){
+      $('#instagram-grid').show();
+      $('#carousel-instagram').hide();
+    } else {
+      $('#carousel-instagram').show();
+      $('#instagram-grid').hide();
+      instagramCarousel();
+    }
+  });
 })
