@@ -2,7 +2,7 @@
   position: relative;
   margin-top: 5em;
   height: 22em;
-  background-image: url("/repository/images/home/Footer-Wave-BG.png");
+  background-image: url("../images/home/Footer-Wave-BG.png");
   overflow: hidden;
 }
 

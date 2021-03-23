@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url('/repository/images/home/Downtown-Marina-Banner-Slide1.jpg');
+  background-image: url('../images/home/Downtown-Marina-Banner-Slide1.jpg');
   background-size: cover;
   background-position-x: center;
   resize: none;
@@ -138,7 +138,7 @@
   top: 0;
   left: 0;
   background-size: cover;
-  background-image: url('/repository/images/home/Downtown-Marina-Banner-Slide2.jpg');
+  background-image: url('../images/home/Downtown-Marina-Banner-Slide2.jpg');
   background-position-x: center;
   -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%); 
@@ -211,7 +211,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url('/repository/images/home/Okanagan-Lake-Doodle-Map.jpg');
+  background-image: url('../images/home/Okanagan-Lake-Doodle-Map.jpg');
   background-position-x: center;
   background-size: cover;
   z-index: -1;
@@ -270,7 +270,7 @@
   top: 0;
   left: 0;
   background-size: cover;
-  background-image: url('/repository/images/home/Downtown-Marina-Moorage-Dawn-1600pxW.jpg');
+  background-image: url('../images/home/Downtown-Marina-Moorage-Dawn-1600pxW.jpg');
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 91.7% 0%, 67% 100%, 0% 100%);
   opacity: 0.6;
@@ -298,7 +298,7 @@
   top: 0;
   right: 0;
   background-size: 40.5em;
-  background-image: url('/repository/images/home/Downtown-Marina-Boat-Gas-1600pxW.jpg'); 
+  background-image: url('../images/home/Downtown-Marina-Boat-Gas-1600pxW.jpg'); 
   background-position-x: center;
   background-position-y: -9.5em;
   -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -376,7 +376,7 @@
   position: relative;
   width: 100%;
   height: 12em;
-  background-image: url("/repository/images/home/Interactive-Map-BG.jpg");
+  background-image: url("../images/home/Interactive-Map-BG.jpg");
   background-size: cover;
   margin-bottom: 2em;
   margin-top: 2em;
@@ -668,7 +668,7 @@ div.ratings-col.review {
     top: 0;
     left: 0;
     background-size: cover;
-    background-image: url('/repository/images/home/Downtown-Marina-Banner-Slide2.jpg');
+    background-image: url('../images/home/Downtown-Marina-Banner-Slide2.jpg');
     background-position-x: center;
     -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
     clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%); 
@@ -742,7 +742,7 @@ div.ratings-col.review {
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url('/repository/images/home/Okanagan-Lake-Doodle-Map.jpg');
+    background-image: url('../images/home/Okanagan-Lake-Doodle-Map.jpg');
     background-position-x: center;
     background-size: cover;
     z-index: -1;
@@ -800,7 +800,7 @@ div.ratings-col.review {
     top: 0;
     left: 0;
     background-size: cover;
-    background-image: url('/repository/images/home/Downtown-Marina-Moorage-Dawn-1600pxW.jpg');
+    background-image: url('../images/home/Downtown-Marina-Moorage-Dawn-1600pxW.jpg');
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
     clip-path: polygon(0% 0%, 91.7% 0%, 67% 100%, 0% 100%);
     opacity: 0.6;
@@ -827,7 +827,7 @@ div.ratings-col.review {
     top: 0;
     right: 0;
     background-size: 50.5em;
-    background-image: url('/repository/images/home/Downtown-Marina-Boat-Gas-1600pxW.jpg'); 
+    background-image: url('../images/home/Downtown-Marina-Boat-Gas-1600pxW.jpg'); 
     background-position-x: center;
     background-position-y: -11.5em;
     -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -878,7 +878,7 @@ div.ratings-col.review {
     position: relative;
     width: 100%;
     height: 18em;
-    background-image: url("/repository/images/home/Interactive-Map-BG.jpg");
+    background-image: url("../images/home/Interactive-Map-BG.jpg");
   }
   .map2 {
     width: 100%;
@@ -1121,7 +1121,7 @@ div.ratings-col.review {
     top: 0;
     left: 0;
     background-size: cover;
-    background-image: url('/repository/images/home/Downtown-Marina-Banner-Slide2.jpg');
+    background-image: url('../images/home/Downtown-Marina-Banner-Slide2.jpg');
     background-position-x: center;
     -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
     clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%); 
@@ -1195,7 +1195,7 @@ div.ratings-col.review {
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url('/repository/images/home/Okanagan-Lake-Doodle-Map.jpg');
+    background-image: url('../images/home/Okanagan-Lake-Doodle-Map.jpg');
     background-position-x: center;
     background-size: cover;
     z-index: -1;
@@ -1253,7 +1253,7 @@ div.ratings-col.review {
     top: 0;
     left: 0;
     background-size: cover;
-    background-image: url('/repository/images/home/Downtown-Marina-Moorage-Dawn-1600pxW.jpg');
+    background-image: url('../images/home/Downtown-Marina-Moorage-Dawn-1600pxW.jpg');
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
     clip-path: polygon(0% 0%, 91.7% 0%, 67% 100%, 0% 100%);
     opacity: 0.6;
@@ -1280,7 +1280,7 @@ div.ratings-col.review {
     top: 0;
     right: 0;
     background-size: 75.5em;
-    background-image: url('/repository/images/home/Downtown-Marina-Boat-Gas-1600pxW.jpg'); 
+    background-image: url('../images/home/Downtown-Marina-Boat-Gas-1600pxW.jpg'); 
     background-position-x: center;
     background-position-y: -18em;
     -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -1336,7 +1336,7 @@ div.ratings-col.review {
     position: relative;
     width: 100%;
     height: 20em;
-    background-image: url("/repository/images/home/Interactive-Map-BG.jpg");
+    background-image: url("../images/home/Interactive-Map-BG.jpg");
   }
   .map2 {
     width: 100%;
@@ -1559,7 +1559,7 @@ div.ratings-col.review {
     top: 0;
     left: 0;
     background-size: cover;
-    background-image: url('/repository/images/home/Downtown-Marina-Banner-Slide2.jpg');
+    background-image: url('../images/home/Downtown-Marina-Banner-Slide2.jpg');
     background-position-x: center;
     -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
     clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%); 
@@ -1634,7 +1634,7 @@ div.ratings-col.review {
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url('/repository/images/home/Okanagan-Lake-Doodle-Map.jpg');
+    background-image: url('../images/home/Okanagan-Lake-Doodle-Map.jpg');
     background-position-x: center;
     background-size: cover;
     z-index: -1;
@@ -1689,7 +1689,7 @@ div.ratings-col.review {
     top: 0;
     left: 0;
     background-size: cover;
-    background-image: url('/repository/images/home/Downtown-Marina-Moorage-Dawn-1600pxW.jpg');
+    background-image: url('../images/home/Downtown-Marina-Moorage-Dawn-1600pxW.jpg');
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
     clip-path: polygon(0% 0%, 91.7% 0%, 67% 100%, 0% 100%);
     opacity: 0.6;
@@ -1716,7 +1716,7 @@ div.ratings-col.review {
     top: 0;
     right: 0;
     background-size: 93.5em;
-    background-image: url('/repository/images/home/Downtown-Marina-Boat-Gas-1600pxW.jpg'); 
+    background-image: url('../images/home/Downtown-Marina-Boat-Gas-1600pxW.jpg'); 
     background-position-x: center;
     background-position-y: -22em;
     -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -1782,7 +1782,7 @@ div.ratings-col.review {
     position: relative;
     width: 100%;
     height: 26em;
-    background-image: url("/repository/images/home/Interactive-Map-BG.jpg");
+    background-image: url("../images/home/Interactive-Map-BG.jpg");
   }
   .map2 {
     width: 100%;
@@ -2007,7 +2007,7 @@ div.ratings-col.review {
     top: 0;
     left: 0;
     background-size: cover;
-    background-image: url('/repository/images/home/Downtown-Marina-Banner-Slide2.jpg');
+    background-image: url('../images/home/Downtown-Marina-Banner-Slide2.jpg');
     -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
     clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%); 
   }
@@ -2081,7 +2081,7 @@ div.ratings-col.review {
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url('/repository/images/home/Okanagan-Lake-Doodle-Map.jpg');
+    background-image: url('../images/home/Okanagan-Lake-Doodle-Map.jpg');
     background-position-x: center;
     background-size: cover;
     z-index: -1;
@@ -2136,7 +2136,7 @@ div.ratings-col.review {
     top: 0;
     left: 0;
     background-size: cover;
-    background-image: url('/repository/images/home/Downtown-Marina-Moorage-Dawn-1600pxW.jpg');
+    background-image: url('../images/home/Downtown-Marina-Moorage-Dawn-1600pxW.jpg');
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
     clip-path: polygon(0% 0%, 91.7% 0%, 67% 100%, 0% 100%);
     opacity: 0.6;
@@ -2163,7 +2163,7 @@ div.ratings-col.review {
     top: 0;
     right: 0;
     background-size: 93.5em;
-    background-image: url('/repository/images/home/Downtown-Marina-Boat-Gas-1600pxW.jpg'); 
+    background-image: url('../images/home/Downtown-Marina-Boat-Gas-1600pxW.jpg'); 
     background-position-x: center;
     background-position-y: -22em;
     -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -2237,7 +2237,7 @@ div.ratings-col.review {
     position: relative;
     width: 100%;
     height: 33em;
-    background-image: url("/repository/images/home/Interactive-Map-BG.jpg");
+    background-image: url("../images/home/Interactive-Map-BG.jpg");
   }
   .map2 {
     width: 100%;

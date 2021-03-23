@@ -7,8 +7,8 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 }
 @font-face {
   font-family: 'rocket_clouds_demoregular';
-  src: url('/repository/fonts/RocketClouds/rocket_clouds-webfont.woff') format('woff2'),
-       url('/repository/fonts/rocket_clouds-webfont.woff') format('woff');
+  src: url('../fonts/RocketClouds/rocket_clouds-webfont.woff') format('woff2'),
+       url('../fonts/rocket_clouds-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -116,11 +116,10 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
   justify-content: center;
   flex-direction: row;
   position: absolute;
-  top: 40%;
-  right: 1%;
+  top: 0.5em;
+  right: 3%;
   color: #fff;
   font-weight: 600;
-  margin-top: 3em;
   font-size: 0.75em;
   z-index: 1;
 }
@@ -176,19 +175,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
     padding: 0.6em;
     font-weight: 600;
   } 
-  .weather {
-    right: 1%;
-    top: 22%;
-  }
-  .weather > div > img {
-    height: 30px;
-    width: 30px;
-    margin-bottom: 0em;
-  }
-  .temp {
-    margin-left: 0.3em;
-    margin-right: 0.3em;
-  }
+ 
 }
  
 @media only screen and (min-width: 992px) { 
@@ -215,14 +202,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
     font-weight: 600;
     padding: 1em;
   } 
-  .weather {
-    right: 1%;
-    margin-top: 3em;
-    font-size: 1em;
-  }
-  .temp > svg {
-    margin-bottom: 0.1em;
-  }
+
 }
  
 @media only screen and (min-width: 1200px) {  
@@ -231,11 +211,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
     font-weight: 600;
     padding: 1em;
   } 
-  .weather {
-    right: 1%;
-    margin-top: 3em;
-    font-size: 1em;
-  }
+
 }
 @media only screen and (min-width: 1570px) {
   .logo, .book {
@@ -257,28 +233,5 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
     font-size: 1em;
     white-space: nowrap;
   }
-  .weather {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    position: absolute;
-    right: 1%;
-    font-weight: 600;
-  }
-  .weather > div > img {
-    height: 40px;
-    width: 40px;
-    margin-bottom: 0.2em;
-  }
-  .temp {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-  }
-  .temp > svg {
-    margin-bottom: 0.2em;
-  }
+
 } 
