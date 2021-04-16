@@ -26,7 +26,7 @@ const createWeatherElement = (data) => {
 
 const requestWeatherInfo = () => {
   $.ajax({
-    url: 'http://api.openweathermap.org/data/2.5/weather?q=Kelowna,ca&APPID=c6406106f2ea7fe5340a18850c70daea',
+    url: '',
     method: 'GET',
     dataType: 'json',
     success: (data) => {
